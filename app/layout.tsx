@@ -1,15 +1,21 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
+import "@fontsource/oswald/latin-500.css";
+import "@fontsource/oswald/latin-600.css";
+import "@fontsource/oswald/latin-700.css";
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-500.css";
+import "@fontsource/inter/latin-600.css";
 import "./globals.css";
 
 const PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
 export const metadata: Metadata = {
-  title: "Uy jihozlari — zavod narxida, bepul yetkazib berish",
-  description: "Uyingiz uchun sifatli mebel va jihozlar. Arizani qoldiring — mutaxassisimiz bog'lanadi.",
+  title: "Uy jihozi — loft uslubidagi mebellar",
+  description: "Metall va massiv yog'ochdan loft uslubidagi mebellar. Arizani qoldiring — dizaynerimiz bog'lanadi.",
 };
 
-export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0f172a" };
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#141210" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
